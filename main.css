@@ -1,0 +1,46 @@
+html {
+	background-color: #3a003a;
+}
+
+body {
+	color: #fafafa;
+}
+
+main {
+	width: 85%;
+	margin: 0 auto;
+}
+
+section {
+	height: 70vh;
+}
+
+textarea {
+	width: 100%;
+	height: 100%;
+}
+
+object {
+	width: 100%;
+	height: 100%;	
+}
+
+button {
+	width: 500px;
+	margin: 40px auto;
+
+}
+
+ul {
+	border: 2px solid;
+	width: 200px;
+	padding: 10px 10px 10px 50px;
+}
+
+@media (min-width: 700px) {
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
+	}
+}
