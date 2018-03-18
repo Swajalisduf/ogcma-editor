@@ -13,4 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	let tagger = new ButtonDetect;
 	tagger.detectKeys();
+	//Adding comment to test git
 });
