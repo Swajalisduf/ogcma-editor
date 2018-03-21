@@ -68,59 +68,59 @@ class ButtonDetect {
 
 	//Checks keys against map and passes tag to insert to insertTag function
 	checkKeys(map){
-		let key = '';
+		let tag = '';
 		let tagger = new ButtonDetect;
 
 		if(!map[16]){
 			switch(true){
 				//Opening Tags, only triggers when shift is not pressed
 				case (map[81]):
-					key = '<publication>';
-					tagger.insertTag(key);
+					tag = '<publication>';
+					tagger.insertTag(tag);
 					break;
 				case (map[87]):
-					key = '<owning>';
-					tagger.insertTag(key);
+					tag = '<owning>';
+					tagger.insertTag(tag);
 					break;
 				case (map[69]):
-					key = '<creation-date>';
-					tagger.insertTag(key);
+					tag = '<creation-date>';
+					tagger.insertTag(tag);
 					break;
 				case (map[82]):
-					key = '<bibliography>';
-					tagger.insertTag(key);
+					tag = '<bibliography>';
+					tagger.insertTag(tag);
 					break;
 				case (map[65]):
-					key = '<artist-surname>';
-					tagger.insertTag(key);
+					tag = '<artist-surname>';
+					tagger.insertTag(tag);
 					break;
 				case (map[83]):
-					key = '<artist-given>';
-					tagger.insertTag(key);
+					tag = '<artist-given>';
+					tagger.insertTag(tag);
 					break;
 				case (map[68]):
-					key = '<artist-date>';
-					tagger.insertTag(key);
+					tag = '<artist-date>';
+					tagger.insertTag(tag);
 					break;
 				case (map[70]):
-					key = '<title>';
-					tagger.insertTag(key);
+					tag = '<title>';
+					tagger.insertTag(tag);
 					break;
 				case (map[90]):
-					key = '<add-artist>';
-					tagger.insertTag(key);
+					tag = '<add-artist>';
+					tagger.insertTag(tag);
 					break;
 				case (map[88]):
-					key = '<medium>';
-					tagger.insertTag(key);
+					tag = '<medium>';
+					tagger.insertTag(tag);
 					break;
 				case (map[67]):
-					key = '<premiere-date>';
-					tagger.insertTag(key);
+					tag = '<premiere-date>';
+					tagger.insertTag(tag);
 					break;
 				case (map[86]):
-					key = '<premiere-venue>';
-					tagger.insertTag(key);
+					tag = '<premiere-venue>';
+					tagger.insertTag(tag);
 					break;
 			}
 		} else if (map[16]) {
@@ -128,51 +128,51 @@ class ButtonDetect {
 			switch(true){
 				case (map[81]):
 					tag = '</publication>';
-					tagger.insertTag(key);
+					tagger.insertTag(tag);
 					break;
 				case (map[87]):
 					tag = '</owning>';
-					tagger.insertTag(key);
+					tagger.insertTag(tag);
 					break;
 				case (map[69]):
 					tag = '</creation-date>';
-					tagger.insertTag(key);
+					tagger.insertTag(tag);
 					break;
 				case (map[82]):
 					tag = '</bibliography>';
-					tagger.insertTag(key);
+					tagger.insertTag(tag);
 					break;
 				case (map[65]):
 					tag = '</artist-surname>';
-					tagger.insertTag(key);
+					tagger.insertTag(tag);
 					break;
 				case (map[83]):
 					tag = '</artist-given>';
-					tagger.insertTag(key);
+					tagger.insertTag(tag);
 					break;
 				case (map[68]):
 					tag = '</artist-date>';
-					tagger.insertTag(key);
+					tagger.insertTag(tag);
 					break;
 				case (map[70]):
 					tag = '</title>';
-					tagger.insertTag(key);
+					tagger.insertTag(tag);
 					break;
 				case (map[90]):
 					tag = '</add-artist>';
-					tagger.insertTag(key);
+					tagger.insertTag(tag);
 					break;
 				case (map[88]):
 					tag = '</medium>';
-					tagger.insertTag(key);
+					tagger.insertTag(tag);
 					break;
 				case (map[67]):
 					tag = '</premiere-date>';
-					tagger.insertTag(key);
+					tagger.insertTag(tag);
 					break;
 				case (map[86]):
 					tag = '</premiere-venue>';
-					tagger.insertTag(key);
+					tagger.insertTag(tag);
 					break;	
 			}
 		}
@@ -188,9 +188,7 @@ class ButtonDetect {
 			+ tag
 			+ editor.value.substring(endPos, editor.value.length);
 			editor.focus();
-			editor.selectionStart;
-		} else {
-		editor.value += tag;
+			//editor.selectionStart;
 		}
 	}
 }
